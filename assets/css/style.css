@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  padding: 0 2rem;
+}
+header .header h1 {
+  font-weight: 700;
+  font-size: x-large;
+  text-align: center;
+  padding: 2rem 0;
+}
+header .header .nav-links {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+header .header .nav-links a {
+  padding: 0 0.5rem;
+}
+header .header .nav-links a:hover {
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.5rem;
+}
+header .header svg {
+  display: none;
+}
+
+.pictures-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr 3fr 3fr 1fr 3fr;
+  grid-template-areas: "img1 img2" "img1 img4" "img3 img4" "img5 img6" "img5 img8" "img7 img8";
+}
+.pictures-container img {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.5rem;
+}
+
+#img1 {
+  grid-area: img1;
+}
+
+#img2 {
+  grid-area: img2;
+}
+
+#img3 {
+  grid-area: img3;
+}
+
+#img4 {
+  grid-area: img4;
+}
+
+#img5 {
+  grid-area: img5;
+}
+
+#img6 {
+  grid-area: img6;
+}
+
+#img7 {
+  grid-area: img7;
+}
+
+#img8 {
+  grid-area: img8;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer .footer {
+  padding: 4rem;
+}
+footer .footer a {
+  padding: 0 2rem;
+}
+footer .footer a svg {
+  width: 20px;
+  color: #000;
+}
+
+@media only screen and (max-width: 991px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .nav-links a {
+    display: none;
+  }
+  .header svg {
+    display: block !important;
+  }
+  .pictures-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr 3fr 3fr 1fr 1fr 3fr;
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8";
+  }
+  .pictures-container img {
+    max-width: 700px;
+    padding: 7px 10px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */
